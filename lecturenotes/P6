@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Hello World</p>
+
+        <ul>
+            <li>Jollof rice</li>
+            <li>Fufu</li>
+            <li>Banku</li>
+          </ul>
