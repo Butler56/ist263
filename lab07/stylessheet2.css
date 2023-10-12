@@ -1,0 +1,14 @@
+
+h1{color:#547ede;
+background-color:#ffffff;}/*Use hex colors from now on*/
+a:hover {color:#ff002f8e;}/* puesdo selcetor selects a state of an element*/
+body {background-color: #00ccffbf;
+    background-image: url("../images/Linkedinlogo.svg");
+    background-size: 50%;
+}
+p {
+    background-color: #efefef;
+    padding: 20px; /* padding is space inside the box */
+    border: 2px solid #333333;
+    margin: 30px;
+}
