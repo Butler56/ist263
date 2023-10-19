@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row1 {display: flex;}
+    .row1 div, .row2 div {/*selects divs inside elememt with row1 class */
+                flex: 1;
+                padding: 10px;
+        }
+        .red {color: #ff0000;}
+</style>
+<body>
+    <p>Lorem <span class="red"><strong>ipsum</strong></span> dolor sit amet consectetur adipisicing elit. Quia recusandae similique debitis labore voluptatem beatae amet a, distinctio ducimus. Ad eius, placeat quod soluta nisi cumque dolor recusandae amet nobis?</p>
+
+    <div class="row1"> 
+        <div>
+           <p>Jollof</p> 
+        </div> 
+        <div>
+            <p>Pancakes</p>
+        </div>
+        <div>
+            <p>Bacon</p>
+        </div>
+        <div>
+            <p>Bread</p>
+        </div>
+    </div>
+</body>
+</html>
