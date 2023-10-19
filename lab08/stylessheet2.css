@@ -1,19 +1,19 @@
 
-h1{color:#547ede;
+h1{color:#8054de;
 background-color:#ffffff1d;}/*Use hex colors from now on*/
 a:hover {color:#00ffd538;}/* puesdo selcetor selects a state of an element*/
 a{color: #676767;}
-body {background-color: #76a0e499;
+body {background-color: #4fd41299;
     background-size: 50%;
 }
-nav a {color: #547ede;}
+nav a {color: #000000;}
 nav a:hover {background-color:#381b9696;}
 nav {
     padding: 10px;
     margin-bottom: 30px;
 }
 p {
-    color: #efefefa4;
+    color: #36d3e8de;
     padding: 20px; /* padding is space inside the box */
     border: 2px solid #333333;
     margin: 30px;
