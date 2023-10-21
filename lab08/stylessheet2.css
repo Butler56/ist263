@@ -17,4 +17,27 @@ p {
     padding: 20px; /* padding is space inside the box */
     margin: 30px;
 }
+/* Stylesheet */
+
+/* Flex Rows and Columns */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px; /* space between rows */
+    border-radius: 8px; /* rounded corners */
+    background-color: #f0f0f0; /* background color */
+}
+
+.flex-col {
+    flex: 1; /* makes each column take equal width */
+    padding: 10px; /* space inside the containers */
+    margin: 10px; /* space between edge of the page and flexboxes */
+}
+
+/* Additional styles for form for better appearance */
+form {
+    width: 100%; /* Allow form to fill space */
+    padding: 10px;
+}
 
