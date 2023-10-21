@@ -35,23 +35,26 @@
             <div class="flex-col">
                 <!-- Column 1: Form -->
                 <form action="https://formspree.io/f/mdorwwzv" method="post">
-                    <!--all form tags are inline-->
-                    <label for="question"> How many Questions do You Have?:</label>
-                    <input type="text" id="autocomplete" question="autocomplete">
-                   
-                    <br><input type="checkbox" id="QuestionregardingSyracuse" name="QuestionregardingSyracuse" value="Question regarding Syracuse">
-                        <label for="QuestionregardingSyracuse">Question regarding Syracuse</label>
-                        <input type="checkbox" id="QuestionregardingIMT" name="QuestionregardingIMT" value="Question regarding IMT">
-                        <label for="QuestionregardingIMT">Question regarding IMT</label>
-                        <input type="checkbox" id="QuestionregardingPersonalreasons" name="QuestionregardingPersonalreasons" value="Question regarding Personal reasons">
-                        <label for="QuestionregardingPersonalreasons">Question regarding Personal reasons</label><br>
-            
-                        <textarea name="message" rows="10" cols="30">
-                
-                            </textarea>
-                        <input type="submit" value="send form">
-            
+                    <!-- Fixed label and input -->
+                    <label for="autocomplete">How many Questions do You Have?:</label>
+                    <input type="text" id="autocomplete" name="question" autocomplete="off">
+        
+                    <br>
+                    <input type="checkbox" id="QuestionregardingSyracuse" name="QuestionregardingSyracuse" value="Question regarding Syracuse">
+                    <label for="QuestionregardingSyracuse">Question regarding Syracuse</label>
+        
+                    <input type="checkbox" id="QuestionregardingIMT" name="QuestionregardingIMT" value="Question regarding IMT">
+                    <label for="QuestionregardingIMT">Question regarding IMT</label>
+        
+                    <input type="checkbox" id="QuestionregardingPersonalreasons" name="QuestionregardingPersonalreasons" value="Question regarding Personal reasons">
+                    <label for="QuestionregardingPersonalreasons">Question regarding Personal reasons</label>
+                    <br>
+        
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <input type="submit" value="send form">
                 </form>
+            </div>
+        </div>
             </div>
             <div class="flex-col">
                 <!-- Column 2: Map -->
