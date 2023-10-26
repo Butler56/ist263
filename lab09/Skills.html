@@ -12,10 +12,10 @@
             margin-top: 20px;
         }
 
-        /* Flexbox styling */
+        /* Flexbox styling for the icons */
         .flex-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -25,6 +25,39 @@
             display: block;
             margin: 10px auto;
         }
+
+        /* Style for the aside sidebar */
+        aside {
+            background-color: #348e71cc;  
+            color: #1685d4b9;  
+            padding: 15px;  /* Extra space inside the aside */
+            border-radius: 15px;  
+        }
+
+        /* Styles for flexbox 2 and its contents */
+        .flexbox-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-container {
+            flex: 3;  /* 3 parts */
+            margin-right: 20px;
+            margin-bottom: 20px;  /* Space between the sentences and the icons */
+        }
+
+        .aside-container {
+            flex: 1;  /* 1 part */
+            max-width: 250px; 
+        }
+
+        body {
+            margin: 20px;  /* Space for the entire content area */
+        }
+        .description-text {
+    color: black;
+}
+
     </style>
 </head>
 <body>
@@ -36,37 +69,55 @@
 
     <h1 id="main-heading">Technical Skills</h1>
 
-    <!-- Commented out the table as per your instructions -->
-    <!-- ... -->
-
+    <!-- Description about the page -->
+    <p class="description-text">This page showcases a collection of my technical proficiencies and skills. From widely-used web technologies to programming languages, each skill is represented with an icon for a visual representation. Scroll down to see my capabilities and other related skills in various domains.</p>
     
-    <!-- Flex container for skills -->
-<div class="flex-container">
-    <div>
-        <img src="path-to-html-icon.png" alt="HTML Icon" class="skill-icon">
-        <br>
-        HTML
+    <!-- Flexbox 2 container -->
+    <div class="flexbox-2">
+
+        <!-- Skills with icons -->
+        <div class="skills-container">
+            <div class="flex-container">
+                <div>
+                    <img src="../images/html5.svg" alt="HTML Icon" class="skill-icon">
+                    <br>
+                    HTML
+                </div>
+                <div>
+                    <img src="../images/python.svg" alt="Python Icon" class="skill-icon">
+                    <br>
+                    Python
+                </div>
+                <div>
+                    <img src="../images/square-js.svg" alt="JavaScript Icon" class="skill-icon">
+                    <br>
+                    JavaScript
+                </div>
+                <div>
+                    <img src="../images/css3-alt.svg" alt="CSS Icon" class="skill-icon">
+                    <br>
+                    CSS
+                </div>
+                <div>
+                    <img src="../images/4080164-200.png" alt="ColdFusion Icon" class="skill-icon">
+                    <br>
+                    ColdFusion
+                </div>
+            </div>
+        </div>
+
+        <!-- Aside container -->
+        <div class="aside-container">
+            <aside>
+                <h2>Other Skills</h2>
+                <!-- List other skills -->
+                <p>Coding: C++</p>
+                <p>Education: Public speaking</p>
+                <p>Education: Writing</p>
+                <p>Sports: Soccer</p>
+                <p>Physical: Stamina</p>
+            </aside>
+        </div>
     </div>
-    <div>
-        <img src="path-to-python-icon.png" alt="Python Icon" class="skill-icon">
-        <br>
-        Python
-    </div>
-    <div>
-        <img src="path-to-javascript-icon.png" alt="JavaScript Icon" class="skill-icon">
-        <br>
-        JavaScript
-    </div>
-    <div>
-        <img src="path-to-css-icon.png" alt="CSS Icon" class="skill-icon">
-        <br>
-        CSS
-    </div>
-    <div>
-        <img src="path-to-coldfusion-icon.png" alt="ColdFusion Icon" class="skill-icon">
-        <br>
-        ColdFusion
-    </div>
-</div>
 </body>
 </html>
