@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../lab07/stylessheet2.css">
+    <meta charset="utf-8">
+    <title>My Technical Skills</title>
+    <style>
+        /* Centering the heading */
+        #main-heading {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        /* Flexbox styling for the icons */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Placeholder for icon size */
+        .skill-icon {
+            width: 50px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Style for the aside sidebar */
+        aside {
+            background-color: #348e71cc;  
+            color: #1685d4b9;  
+            padding: 15px;  /* Extra space inside the aside */
+            border-radius: 15px;  
+        }
+
+        /* Styles for flexbox 2 and its contents */
+        .flexbox-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-container {
+            flex: 3;  /* 3 parts */
+            margin-right: 20px;
+            margin-bottom: 20px;  /* Space between the sentences and the icons */
+        }
+
+        .aside-container {
+            flex: 1;  /* 1 part */
+            max-width: 250px; 
+        }
+
+        body {
+            margin: 20px;  /* Space for the entire content area */
+        }
+        .description-text {
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <nav style="padding: 10px; margin-bottom: 30px;">
+        <a href="https://butler56.github.io/ist263/lab07/index.html">Bio Page</a> |
+        <a href="https://butler56.github.io/ist263/lab07/Skills.html">Skills Page</a> |
+        <a href="https://butler56.github.io/ist263/contact.html">Contact Page</a>
+    </nav>
+
+    <h1 id="main-heading">Technical Skills</h1>
+
+    <!-- Description about the page -->
+    <p class="description-text">This page showcases a collection of my technical proficiencies and skills. From widely-used web technologies to programming languages, each skill is represented with an icon for a visual representation. Scroll down to see my capabilities and other related skills in various domains.</p>
+    
+    <!-- Flexbox 2 container -->
+    <div class="flexbox-2">
+
+        <!-- Skills with icons -->
+        <div class="skills-container">
+            <div class="flex-container">
+                <div>
+                    <img src="../images/html5.svg" alt="HTML Icon" class="skill-icon">
+                    <br>
+                    HTML
+                </div>
+                <div>
+                    <img src="../images/python.svg" alt="Python Icon" class="skill-icon">
+                    <br>
+                    Python
+                </div>
+                <div>
+                    <img src="../images/square-js.svg" alt="JavaScript Icon" class="skill-icon">
+                    <br>
+                    JavaScript
+                </div>
+                <div>
+                    <img src="../images/css3-alt.svg" alt="CSS Icon" class="skill-icon">
+                    <br>
+                    CSS
+                </div>
+                <div>
+                    <img src="../images/4080164-200.png" alt="ColdFusion Icon" class="skill-icon">
+                    <br>
+                    ColdFusion
+                </div>
+            </div>
+        </div>
+
+        <!-- Aside container -->
+        <div class="aside-container">
+            <aside>
+                <h2>Other Skills</h2>
+                <!-- List other skills -->
+                <p>Coding: C++</p>
+                <p>Education: Public speaking</p>
+                <p>Education: Writing</p>
+                <p>Sports: Soccer</p>
+                <p>Physical: Stamina</p>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
