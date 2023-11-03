@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Contact</title>
-        <link rel="stylesheet" href="../lab08/stylessheet2.css">
-    </head>
-    <body>
-        <nav style="padding: 10px; margin-bottom: 30px;">
-            <a href="https://butler56.github.io/ist263/lab07/index.html">Bio Page</a> |
-            <a href="https://butler56.github.io/ist263/lab07/Skills.html">Skills Page</a> |
-            <a href="https://butler56.github.io/ist263/contact.html">Contact Page</a>
-        </nav>
-        <h1>Contact</h1>
-        <p>Name: Alexandro Frimpong </p>
-        <img src="../images/Logo-Sized.png" alt="Linkedinlogo">
-
-        
-        <div class="flex-row">
-            <!-- Row 1 -->
-            <div class="flex-col">
-                <!-- Column 1: Address -->
-                <p>Address: 1201 Madison St</p>
-                <p>Syracuse, NY 13210 </p>
-            </div>
-            <div class="flex-col">
-                <!-- Column 2: Email and LinkedIn -->
-                <a href="mailto:adfrimpo@syr.edu">Alexandro Frimpong Email</a><br>
-                <a href="https://www.linkedin.com/in/alexandrofrimpong/">My LinkedIn Profile</a>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lab08/stylessheet2.css">
+</head>
+<body>
+    <nav style="padding: 10px; margin-bottom: 30px;">
+        <a href="https://butler56.github.io/ist263/lab07/index.html">Bio Page</a> |
+        <a href="https://butler56.github.io/ist263/lab07/Skills.html">Skills Page</a> |
+        <a href="https://butler56.github.io/ist263/contact.html">Contact Page</a>
+    </nav>
+    <h1>Contact</h1>
+    <p>Name: Alexandro Frimpong</p>
+    <img src="../images/Logo-Sized.png" alt="Linkedinlogo">
+    
+    <div class="flex-row" style="flex-wrap: wrap;">
+        <!-- Row 1 -->
+        <div class="flex-col">
+            <!-- Column 1: Address -->
+            <p>Address: 1201 Madison St</p>
+            <p>Syracuse, NY 13210</p>
+        </div>
+        <div class="flex-col">
+            <!-- Column 2: Email and LinkedIn -->
+            <a href="mailto:adfrimpo@syr.edu">Alexandro Frimpong Email</a><br>
+            <a href="https://www.linkedin.com/in/alexandrofrimpong/">My LinkedIn Profile</a>
+        </div>
+    </div>
+    
+    <div class="flex-row" style="flex-wrap: wrap;">
+        <!-- Row 2 -->
+        <div class="flex-col">
+            <!-- Column 1: Form -->
+            <form action="https://formspree.io/f/mdorwwzv" method="post">
+                <!-- Fixed label and input -->
+                <label for="autocomplete">How many Questions do You Have?:</label>
+                <input type="text" id="autocomplete" name="question" autocomplete="off">
+    
+                <br>
+                <input type="checkbox" id="QuestionregardingSyracuse" name="QuestionregardingSyracuse" value="Question regarding Syracuse">
+                <label for="QuestionregardingSyracuse">Question regarding Syracuse</label>
+    
+                <input type="checkbox" id="QuestionregardingIMT" name="QuestionregardingIMT" value="Question regarding IMT">
+                <label for="QuestionregardingIMT">Question regarding IMT</label>
+    
+                <input type="checkbox" id="QuestionregardingPersonalreasons" name="QuestionregardingPersonalreasons" value="Question regarding Personal reasons">
+                <label for="QuestionregardingPersonalreasons">Question regarding Personal reasons</label>
+                <br>
+    
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <input type="submit" value="send form">
+            </form>
         </div>
         
-        <div class="flex-row">
-            <!-- Row 2 -->
-            <div class="flex-col">
-                <!-- Column 1: Form -->
-                <form action="https://formspree.io/f/mdorwwzv" method="post">
-                    <!-- Fixed label and input -->
-                    <label for="autocomplete">How many Questions do You Have?:</label>
-                    <input type="text" id="autocomplete" name="question" autocomplete="off">
-        
-                    <br>
-                    <input type="checkbox" id="QuestionregardingSyracuse" name="QuestionregardingSyracuse" value="Question regarding Syracuse">
-                    <label for="QuestionregardingSyracuse">Question regarding Syracuse</label>
-        
-                    <input type="checkbox" id="QuestionregardingIMT" name="QuestionregardingIMT" value="Question regarding IMT">
-                    <label for="QuestionregardingIMT">Question regarding IMT</label>
-        
-                    <input type="checkbox" id="QuestionregardingPersonalreasons" name="QuestionregardingPersonalreasons" value="Question regarding Personal reasons">
-                    <label for="QuestionregardingPersonalreasons">Question regarding Personal reasons</label>
-                    <br>
-        
-                    <textarea name="message" rows="10" cols="30"></textarea>
-                    <input type="submit" value="send form">
-                </form>
-            </div>
+        <!-- Column 2: Map -->
+        <div class="flex-col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.802660811783!2d-76.1314460242813!3d43.04558339151804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f309745cb783%3A0xcccb13fcd26cebb3!2s1201%20Madison%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1694724480182!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-            <div class="flex-col">
-                <!-- Column 2: Map -->
-                <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.802660811783!2d-76.1314460242813!3d43.04558339151804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f309745cb783%3A0xcccb13fcd26cebb3!2s1201%20Madison%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1694724480182!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            
-    </body>
-
-    </html>
-        
-        
+    </div>
+</body>
+</html>

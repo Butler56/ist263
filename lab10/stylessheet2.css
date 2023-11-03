@@ -40,4 +40,28 @@ form {
     width: 100%; /* Allow form to fill space */
     padding: 10px;
 }
+/* Add a class selector and the max-width property in your stylesheet */
+.responsive-image {
+    max-width: 100%;
+}
+/* Styles for desktop navigation */
+nav {
+    padding: 10px;
+}
+
+/* Media query for tablet and smaller size viewports */
+@media (max-width: 768px) {
+    /* Style links inside the navigation */
+    nav a {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    /* Hide the pipe characters */
+    .pipe {
+        display: none;
+    }
+}
+
 
