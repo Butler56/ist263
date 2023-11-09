@@ -1,101 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandro Frimpong-Bio</title>
-    <link rel="stylesheet" type="text/css" href="../lab11/stylessheet2.css">
+    <title>Explore Ghana</title>
     <style>
-        /* Font sizes are resizable */
         body {
-            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
         }
 
-        /* Relative Length Font Units: https://www.w3schools.com/cssref/css_units.asp */
-        h1, h2, p, ul, li {
-            font-size: 1.25em; /* 1.25 times the font size of the parent element (body) */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
         }
 
-        /* Absolute units cannot be resized by the browser zoom */
-        .absolute-font {
-            font-size: 14px; /* 14 pixels, which is an absolute unit */
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
         }
 
-        .skip {
-            background-color: orange;
-            padding: 5px;
-            border: 1px solid #000000;
-            text-decoration: none;
-            position: absolute;
-            top: 10px;
-            left: -999px;
-            color: white; /* Adding text color for visibility */
+        .flag {
+            width: 100%;
+            max-width: 500px;
+            margin: 2em auto;
         }
 
-        .skip:focus {
-            left: 10px;
-            outline: none; /* Removing the default outline on focus */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#content" class="skip" tabindex="1">Skip to Content</a>
-        <a href="https://butler56.github.io/ist263/lab11/index.html">Bio Page</a> |
-        <a href="https://butler56.github.io/ist263/lab11/Skills.html">Skills Page</a> |
-        <a href="https://butler56.github.io/ist263/lab11/contact.html">Contact Page</a>
-    </nav>
 
-    <section id="content">
-        <a href="#" class="skip" tabindex="1">Skip to Content</a>
-        <header>
-            <h1>Alexandro Frimpong's Bio</h1>
-        </header>
+    <header>
+        <h1>Explore Ghana</h1>
+    </header>
 
-        <!-- Header with the Image -->
-        <header>
-            <img class="responsive-image" src="../images/Profile-Page.png" alt="Alexandro Frimpong's Profile Image">
-        </header>
-
-        <!-- Main Content -->
-        <main>
-            <p>I was born on September 5, 2003 in Malaysia, Kuala Lumpur. Though being born in this part of Asia, I am Ghanaian which is rare in my country, and I was named after a famous Italian soccer player.</p>
-
-            <p>
-                My current major is Information Management and Technology. I'm interested in the future of tech and how it will change the new world. I led a collaborative effort with peers to gather comprehensive functional and non-functional requirements, enabling the identification and eradication of malware within an information system.
-            </p>
-
-            <p>I love playing basketball and watching the NBA very much. My favorite player is Jimmy Butler, and I have all his jerseys. I have 3 brothers and 3 sisters, and I was born in Malaysia.</p>
-        </main>
+    <section>
+        <h2>Welcome to the Heart of West Africa!</h2>
+        <p>As a proud Ghanaian, I am thrilled to guide you through the rich tapestry of my homeland. Get ready for an immersive journey into the vibrant culture, traditions, and beauty of Ghana.</p>
     </section>
 
     <section>
-        <header>
-            <h2>Personal Information</h2>
-        </header>
-        <main>
-            <p>I can be found mostly at the Barnes Center either lifting weights or playing basketball on my free time. I feel like I'm really a simple guy.</p>
-        </main>
+        <h2>Discover Ghana</h2>
+        <p>Embark on a virtual adventure and explore the amazing facets of Ghana:</p>
+        <ul>
+            <li>Delight your taste buds with the rich and diverse Ghanaian cuisine.</li>
+            <li>Immerse yourself in the colorful decorations that adorn our celebrations.</li>
+            <li>Witness the unique and beautiful style of Ghanaian weddings.</li>
+            <li>Connect with the breathtaking natural environment that defines Ghana's landscape.</li>
+            <li>Experience the all-encompassing beauty that makes Ghana truly special.</li>
+        </ul>
     </section>
 
-    <section>
-        <header>
-            <h2>Favorite Ghanaian Dishes</h2>
-        </header>
-        <main>
-            <ul>
-                <li>Jollof rice</li>
-                <li>Fufu</li>
-                <li>Banku</li>
-            </ul>
-        </main>
-    </section>
+    <img class="flag" src="ghana_flag.jpg" alt="Ghanaian Flag">
 
-    <!-- Footer -->
     <footer>
-        <hr>
-        <p class="img1">1% better every day - Kobe Bryant</p>
-        <p>&copy; 2020</p>
+        <p>Explore the wonders of Ghana | &copy; 2023 Your Name</p>
     </footer>
+
 </body>
 </html>
