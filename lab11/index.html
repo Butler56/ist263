@@ -29,10 +29,12 @@
             position: absolute;
             top: 10px;
             left: -999px;
+            color: white; /* Adding text color for visibility */
         }
 
         .skip:focus {
             left: 10px;
+            outline: none; /* Removing the default outline on focus */
         }
     </style>
 </head>
@@ -45,6 +47,7 @@
     </nav>
 
     <section id="content">
+        <a href="#" class="skip" tabindex="1">Skip to Content</a>
         <header>
             <h1>Alexandro Frimpong's Bio</h1>
         </header>
@@ -96,4 +99,3 @@
     </footer>
 </body>
 </html>
-
