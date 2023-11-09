@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add your other metadata and links here -->
     <title>Alexandro Frimpong-Bio</title>
     <link rel="stylesheet" type="text/css" href="../lab08/stylessheet2.css">
     <style>
@@ -21,16 +20,31 @@
         .absolute-font {
             font-size: 14px; /* 14 pixels, which is an absolute unit */
         }
+
+        .skip {
+            background-color: orange;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px;
+        }
+
+        .skip:focus {
+            left: 10px;
+        }
     </style>
 </head>
 <body>
-    <nav style="padding: 10px;">
-        <a href="https://butler56.github.io/ist263/lab08/index.html">Bio Page</a> |
-        <a href="https://butler56.github.io/ist263/lab08/Skills.html">Skills Page</a> |
+    <nav>
+        <a href="#content" class="skip" tabindex="1">Skip to Content</a>
+        <a href="https://butler56.github.io/ist263/lab08/index.html">Bio Page</a>
+        <a href="https://butler56.github.io/ist263/lab08/Skills.html">Skills Page</a>
         <a href="https://butler56.github.io/ist263/lab08/contact.html">Contact Page</a>
     </nav>
 
-    <section>
+    <section id="content">
         <header>
             <h1>Alexandro Frimpong's Bio</h1>
         </header>
@@ -82,5 +96,4 @@
     </footer>
 </body>
 </html>
-
 

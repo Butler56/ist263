@@ -69,16 +69,32 @@
         .description-text {
             color: black;
         }
+        
+        /* Skip to Content button */
+        .skip {
+            background-color: orange;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px;
+        }
+
+        .skip:focus {
+            left: 10px;
+        }
     </style>
 </head>
 <body>
     <nav style="padding: 10px; margin-bottom: 30px;">
-        <a href="https://butler56.github.io/ist263/lab07/index.html">Bio Page</a> |
-        <a href="https://butler56.github.io/ist263/lab07/Skills.html">Skills Page</a> |
+        <a href="#content" class="skip" tabindex="1">Skip to Content</a>
+        <a href="https://butler56.github.io/ist263/lab07/index.html">Bio Page</a>
+        <a href="https://butler56.github.io/ist263/lab07/Skills.html">Skills Page</a>
         <a href="https://butler56.github.io/ist263/contact.html">Contact Page</a>
     </nav>
 
-    <section>
+    <section id="content">
         <header>
             <h1 id="main-heading">Technical Skills</h1>
         </header>
@@ -138,4 +154,5 @@
     </section>
 </body>
 </html>
+
 
