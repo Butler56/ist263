@@ -1,76 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Ghana</title>
+    <link rel="stylesheet" type="text/css" href="../lab11/stylessheet2.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f8f8f8;
             color: #333;
         }
 
-        header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+        nav {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
             text-align: center;
-            padding: 1em;
         }
 
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 0 1em;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #content {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #3498db;
         }
 
         .flag {
-            width: 100%;
-            max-width: 500px;
-            margin: 2em auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        section h2 {
+            color: #3498db;
         }
 
         footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            margin-top: 40px;
             text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+
+        hr {
+            border: 1px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#content" class="skip" tabindex="1">Skip to Content</a>
+    </nav>
 
-    <header>
-        <h1>Explore Ghana</h1>
-    </header>
+    <section id="content">
+        <header>
+            <h1>Welcome to Explore Ghana!</h1>
+            <p>Are you ready to embark on a virtual journey to the beautiful and vibrant country of Ghana? As a proud Ghanaian, I am excited to take you on this exploration of my homeland. On this page, you'll discover fun and intriguing facts about Ghana, along with a proud display of the Ghanaian flag. Let's dive into the rich culture, traditions, and beauty of this remarkable country.</p>
+        </header>
 
-    <section>
-        <h2>Welcome to the Heart of West Africa!</h2>
-        <p>As a proud Ghanaian, I am thrilled to guide you through the rich tapestry of my homeland. Get ready for an immersive journey into the vibrant culture, traditions, and beauty of Ghana.</p>
+        <section>
+            <h2>Fun Facts About Ghana</h2>
+            <p>Explore interesting and lesser-known facts about Ghana, including historical tidbits, geographical information, and cultural insights.</p>
+            <!-- Add your fun facts here -->
+        </section>
+
+        <section>
+            <h2>Ghanaian Flag</h2>
+            <img class="flag" src="ghana_flag.jpg" alt="Ghanaian Flag">
+            <p>The Ghanaian flag holds significance in the country's history and culture.</p>
+        </section>
     </section>
-
-    <section>
-        <h2>Discover Ghana</h2>
-        <p>Embark on a virtual adventure and explore the amazing facets of Ghana:</p>
-        <ul>
-            <li>Delight your taste buds with the rich and diverse Ghanaian cuisine.</li>
-            <li>Immerse yourself in the colorful decorations that adorn our celebrations.</li>
-            <li>Witness the unique and beautiful style of Ghanaian weddings.</li>
-            <li>Connect with the breathtaking natural environment that defines Ghana's landscape.</li>
-            <li>Experience the all-encompassing beauty that makes Ghana truly special.</li>
-        </ul>
-    </section>
-
-    <img class="flag" src="ghana_flag.jpg" alt="Ghanaian Flag">
 
     <footer>
-        <p>Explore the wonders of Ghana | &copy; 2023 Your Name</p>
+        <hr>
+        <p class="quote">"1% better every day" - Kobe Bryant</p>
+        <p>&copy; 2023 Your Name</p>
     </footer>
-
 </body>
 </html>
