@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12</title>
+    <link rel="stylesheet" href="https://laferger.github.io/ist263/images/animate.css">
+    <style>
+        /* Add embedded styles for flexbox */
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <script>
+        // Define the WinnerMessage function
+        function WinnerMessage() {
+            document.getElementById("messageContainer").innerHTML = 'You Won!';
+        }
+
+        // Define the TryAgain function
+        function TryAgain() {
+            document.getElementById("messageContainer").innerHTML = 'Wrong Shell - Try Again';
+        }
+
+        // Function to dynamically change the order of the winning shell
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+
+        // Run the ShuffleShells function onload
+        window.onload = function () {
+            ShuffleShells();
+        };
+    </script>
+</head>
+<body>
+    <h1>Choose a Walnut</h1>
+
+    <!-- Add a container div for flexbox and give each image an id -->
+    <div class="container">
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" id="first" class="first" onclick="WinnerMessage();">
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="second walnut" id="second" class="second" onclick="TryAgain();">
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="third walnut" id="third" class="third" onclick="TryAgain();">
+    </div>
+
+    <!-- Add an empty div for messages -->
+    <div id="messageContainer"></div>
+
+    <!-- ... (remaining code) ... -->
+</body>
+</html>
