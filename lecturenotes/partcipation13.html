@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syracuse University</title>
+  <style>
+    /* Set initial text color */
+    #suDiv {
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="suDiv" onclick="changeText()">Syracuse University Inside</div>
+
+<script>
+  function changeText() {
+    var suDiv = document.getElementById("suDiv");
+
+    // Change text content
+    suDiv.textContent = "Orange Nation";
+
+    // Change text color
+    suDiv.style.color = "orange";
+  }
+</script>
+
+</body>
+</html>
