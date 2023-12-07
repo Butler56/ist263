@@ -1,27 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-    <meta charset="utf-8">
-    <title>Alexandro Frimpong-Bio</title>
-   </head> 
-   <body>
-   <h2>Alexandro Frimpong's Bio</h2>
-   <p>I was born on September 5, 2003 in malaysia, Kuala Lumpur. Though being born in this part of Asia,I am Ghanaian which is rare in my country and I named after a famous italian soccer player</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4; /* Light gray background */
+    }
 
-   <p>
-    My current major is Information management and technology interested in the future of tech and how it will change the new world. Led a collaborative effort with peers to gather comprehensive functional and non-functional requirements, enabling the identification and eradication of malware within an information system.
-   </p>
-   <p>I love playing basketball and watching the NBA very much. My favorite player is Jimmy Butler and I have all his jerseys. I have 3 brothers and 3 sisters and I was born in Malaysia.</p>
+    header, nav, main, footer {
+      margin: 20px;
+      border: 1px solid #ddd; /* Light gray border */
+      border-radius: 10px;
+      background-color: #fff; /* White background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    }
 
-   <h2>Personal Information</h2>
-   <p>I can be found mostly at the barnes center either lifting weights or playing basketball on my free time. I feel like I'm really a simple guy</p>
-   <h2>Favorite Ghanaian dishes</h2>
-  <ul>
-    <li>Jollof rice</li>
-    <li>Fufu</li>
-    <li>Banku</li>
-  </ul>
-<br>
-<p>&copy;2020</p>
+    header, nav, footer {
+      background-color: #006b3f;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Distribute items evenly */
+    }
+
+    .flag-container, .heading, .fun-facts-container, .fun-fact, .fact-image {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .flag {
+  width: 100%;
+  max-width: none; /* Disable the maximum width */
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+}
+
+    .heading {
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333; /* Dark gray text */
+    }
+
+    .fun-facts-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .fun-fact {
+      flex-basis: calc(33.33% - 20px);
+      margin: 10px;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .fact-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      background-color: #006b3f;
+      color: #fff;
+      padding: 1em 0;
+      border-radius: 0 0 10px 10px; /* Rounded corners on the bottom */
+    }
+
+    .footer-content {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    hr {
+      margin: 0 10px;
+      border: none;
+      border-top: 1px solid #ddd;
+      flex-grow: 1;
+    }
+  </style>
+  <title>GhanaGateway - A Journey into the Heart of West Africa</title>
+</head>
+<body>
+
+  <header>
+    <h1>GhanaGateway: A Journey into the Heart of West Africa</h1>
+  </header>
+
+  <nav>
+    <a href="#">Bio Page</a> |
+    <a href="#">Skills Page</a> |
+    <a href="#">Contact Page</a>
+  </nav>
+
+  <main>
+    <div class="flag-container">
+      <img src="../images/Profile-Page.png" alt="Ghana Flag" class="flag">
+    </div>
+
+    <div class="heading">Explore the rich history and culture of Ghana through these fascinating insights.</div>
+
+    <div class="fun-facts-container">
+      <div class="fun-fact">
+        <h2>Fact 1</h2>
+        <p>Ghana, situated on the Gulf of Guinea, boasts diverse landscapes and shares borders with Cote d'Ivoire, Burkina Faso, and Togo. The country's topography ranges from coastal plains to savannahs and forests.</p>
+        <img src="../images/African-map-showing-Ghana-Rwanda-the-two-African-countries-currently-using-drones.ppm.png" alt="Ghana on The Map" class="fact-image">
+      </div>
+
+      <div class="fun-fact">
+        <h2>Fact 2</h2>
+        <p>The bustling capital city, Accra, is located along the Gulf of Guinea. Accra is not only a political and economic hub but also a cultural center with vibrant markets, museums, and historical sites.</p>
+        <img src="../images/Unknown.jpeg" alt="OverHead Image of The City of Accra" class="fact-image">
+        <img src="../images/images.jpeg" alt="Another OverHead Image of The City of Accra" class="fact-image">
+      </div>
+
+      <div class="fun-fact">
+        <h2>Fact 3</h2>
+        <p>In 1957, Ghana became the first African country to gain independence from colonial rule. Led by Kwame Nkrumah, the independence movement inspired other African nations in their quest for freedom.</p>
+        <img src="../images/Unknown-1.jpeg" alt="Image of Kwame Nkrumah Behind a Ghanaian Flag" class="fact-image">
+      </div>
+
+      <div class="fun-fact">
+        <h2>Fact 4</h2>
+        <p>English is the official language, reflecting Ghana's colonial past. However, the country is home to various ethnic groups, each with its own language and cultural traditions.</p>
+        <img src="../images/hqdefault.jpg" alt="Twi Translation" class="fact-image">
+      </div>
+
+      <div class="fun-fact">
+        <h2>Fact 5</h2>
+        <p>Ghana's biodiversity is showcased in national parks like Mole National Park, offering safaris to view elephants, antelopes, and a variety of bird species. The country is committed to conservation efforts.</p>
+        <img src="../images/Unknown-2.jpeg" alt="Image of elephants at the Mole National Park in Ghana" class="fact-image">
+      </div>
+
+      <div class="fun-fact">
+        <h2>Fact 6</h2>
+        <p>The traditional Kente cloth, characterized by vibrant colors and intricate patterns, is a symbol of cultural identity. Woven by the Ashanti people, Kente is worn on special occasions and holds deep cultural significance.</p>
+        <img src="../images/Unknown-3.jpeg" alt="Fact 6 Image" class="fact-image">
+        <img src="../images/Unknown-4.jpeg" alt="Couple wearing Kente cloth" class="fact-image">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Africa's Best</p>
+    </div>
+    <hr>
+    <p>&copy; 2023</p>
+  </footer>
+
 </body>
-</html> 
+</html>

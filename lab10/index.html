@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add your other metadata and links here -->
-    <title>Alexandro Frimpong-Bio</title>
-    <link rel="stylesheet" type="text/css" href="../lab08/stylessheet2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007acc;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    main {
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .flag-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .flag {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .fun-facts-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .fun-fact {
+      flex-basis: calc(33.33% - 20px);
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .fun-fact:hover {
+      transform: scale(1.05);
+    }
+
+    .fact-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Facts About Ghana</title>
 </head>
 <body>
-    <nav style="padding: 10px;">
-        <a href="https://butler56.github.io/ist263/lab08/index.html">Bio Page</a> |
-        <a href="https://butler56.github.io/ist263/lab08/Skills.html">Skills Page</a> |
-        <a href="https://butler56.github.io/ist263/lab08/contact.html">Contact Page</a>
 
-        <h1>Alexandro Frimpong's Bio</h1>
-    </nav>
+  <header>
+    <h1>Facts About Ghana</h1>
+  </header>
 
-    <!-- Header with the Image -->
-    <header>
-        <img class="responsive-image" src="../images/Profile-Page.png" alt="Profile-Page">
-    </header>
+  <nav>
+    <a href="https://butler56.github.io/ist263/lab11/index.html">Bio Page</a> |
+    <a href="https://butler56.github.io/ist263/lab11/Skills.html">Skills Page</a> |
+    <a href="https://butler56.github.io/ist263/lab11/contact.html">Contact Page</a>
+  </nav>
 
-    <!-- Main Content -->
-    <main>
-        <p>I was born on September 5, 2003 in Malaysia, Kuala Lumpur. Though being born in this part of Asia, I am Ghanaian which is rare in my country, and I was named after a famous Italian soccer player.</p>
+  <main>
+    <div class="flag-container">
+      <img src="ghana-flag.jpg" alt="Ghana Flag" class="flag">
+    </div>
 
-        <p>
-            My current major is Information Management and Technology. I'm interested in the future of tech and how it will change the new world. I led a collaborative effort with peers to gather comprehensive functional and non-functional requirements, enabling the identification and eradication of malware within an information system.
-        </p>
+    <div class="fun-facts-container">
+      <div class="fun-fact">
+        <h2>Fact 1</h2>
+        <p>Ghana is located on the Gulf of Guinea and the Atlantic Ocean in West Africa.</p>
+        <img src="fact1-image.jpg" alt="Fact 1 Image" class="fact-image">
+      </div>
 
-        <p>I love playing basketball and watching the NBA very much. My favorite player is Jimmy Butler, and I have all his jerseys. I have 3 brothers and 3 sisters, and I was born in Malaysia.</p>
+      <div class="fun-fact">
+        <h2>Fact 2</h2>
+        <p>The capital city of Ghana is Accra, which is known for its vibrant culture and historical landmarks.</p>
+        <img src="fact2-image.jpg" alt="Fact 2 Image" class="fact-image">
+      </div>
 
-        <h2>Personal Information</h2>
-        <p>I can be found mostly at the Barnes Center either lifting weights or playing basketball on my free time. I feel like I'm really a simple guy.</p>
+      <div class="fun-fact">
+        <h2>Fact 3</h2>
+        <p>Ghana is the first African country to gain independence from colonial rule in 1957.</p>
+        <img src="fact3-image.jpg" alt="Fact 3 Image" class="fact-image">
+      </div>
+    </div>
+  </main>
 
-        <h2>Favorite Ghanaian Dishes</h2>
-        <ul>
-            <li>Jollof rice</li>
-            <li>Fufu</li>
-            <li>Banku</li>
-        </ul>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <hr>
-        <p class="img1">1% better every day - Kobe Bryant</p>
-        <p>&copy; 2020</p>
-    </footer>
 </body>
 </html>
