@@ -31,10 +31,15 @@
       color: #fff;
     }
 
+    nav {
+      text-align: center;
+    }
+
     nav a {
+      display: block;
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 10px 0;
     }
 
     main {
@@ -52,8 +57,8 @@
     }
 
     .dish-info {
-      width: 45%;
-      margin: 20px;
+      width: 100%; /* Adjusted width for better mobile responsiveness */
+      margin: 20px 0; /* Added margin for better spacing on mobile */
       padding: 20px;
       border-radius: 8px;
       background-color: #fff;
@@ -66,11 +71,12 @@
 
     .dish-images {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap; /* Adjusted to wrap images on smaller screens */
+      justify-content: space-around;
     }
 
     .dish-image {
-      width: 48%;
+      width: 100%; /* Adjusted width for better mobile responsiveness */
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       overflow: hidden;
@@ -109,6 +115,7 @@
 
     footer {
       display: flex;
+      flex-direction: column; /* Adjusted to stack content vertically on smaller screens */
       align-items: center;
       background-color: #006b3f;
       color: #fff;
@@ -116,22 +123,16 @@
       border-radius: 0 0 10px 10px;
     }
 
-    .footer-content {
-      flex-grow: 1;
-      text-align: left;
-      padding: 20px;
-    }
-
-    .footer-content-right {
-      text-align: right;
-      flex-grow: 0;
-      padding: 20px;
+    .footer-content, .footer-content-right {
+      text-align: center; /* Adjusted text alignment for better mobile readability */
+      padding: 10px; /* Adjusted padding for better spacing on mobile */
     }
 
     hr {
       border: none;
       border-top: 1px solid #ddd;
-      margin: 20px 0;
+      margin: 10px 0; /* Adjusted margin for better spacing on mobile */
+      width: 100%; /* Ensures the horizontal line spans the full width on mobile */
     }
   </style>
   <title>GhanaGateway - Food Culture and Origins</title>
@@ -251,3 +252,4 @@
 </body>
 
 </html>
+
