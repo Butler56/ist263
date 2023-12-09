@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family:'Montserrat', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4; /* Light gray background */
-      color: #333; /* Dark gray text */
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     header, nav, main, footer {
-      margin: 20px;
-      background-color: #c00c0cef; /* Ghanaian red color */
+      margin: 10px;
+      background-color: #c00c0cef;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     header, nav, footer {
       text-align: center;
       padding: 1em 0;
-      border-radius: 10px 10px 0 0; /* Rounded corners on the top */
-      color: #fff; /* White text */
+      border-radius: 10px 10px 0 0;
+      color: #fff;
     }
 
     nav a {
@@ -37,55 +38,93 @@
     }
 
     main {
-      margin: 20px;
+      margin: 10px;
       background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-      overflow: hidden; /* Clear floats */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
 
-    .food-container {
-      width: 100%;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .food-image {
-      width: 45%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 8px; /* Rounded corners */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    .dish-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     .dish-info {
       width: 45%;
-      float: left; /* Float left for two-column layout */
       margin: 20px;
       padding: 20px;
       border-radius: 8px;
       background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .dish-info h2 {
-      color: #e8491d; /* Ghanaian red accent color */
+      color: #e8491d;
+    }
+
+    .dish-images {
+      display: flex;
+      justify-content: space-between;
     }
 
     .dish-image {
-      width: 45%;
-      float: right; /* Float right for two-column layout */
-      margin: 20px;
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 10px;
     }
 
     .dish-image img {
-      max-width: 100%; /* Ensure images don't exceed the container width */
+      max-width: 100%;
       height: auto;
+      border-radius: 8px;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(200, 50, 50, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .dish-image:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      color: #fff;
+      text-align: center;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      background-color: #006b3f;
+      color: #fff;
+      padding: 1em 0;
+      border-radius: 0 0 10px 10px;
     }
 
     .footer-content {
       flex-grow: 1;
       text-align: left;
+      padding: 20px;
+    }
+
+    .footer-content-right {
+      text-align: right;
+      flex-grow: 0;
       padding: 20px;
     }
 
@@ -97,6 +136,7 @@
   </style>
   <title>GhanaGateway - Food Culture and Origins</title>
 </head>
+
 <body>
 
   <header>
@@ -104,61 +144,110 @@
   </header>
 
   <nav>
-    <a href="#">Bio Page</a> |
-    <a href="#">Skills Page</a> |
-    <a href="#">Food Page</a> <!-- Updated navigation link for the second page -->
+    <a href="../final_project/page1.html">Home Page</a> |
+    <a href="../final_project/page2.html">Food Culture and Origins</a> |
+    <a href="../final_project/page3.html">Style of Dressing</a>
   </nav>
 
   <main>
-    <div class="food-container">
-      <img src="" alt="Jollof Rice" class="food-image">
-    </div>
+    <div class="dish-container">
+      <!-- Dish 1: Jollof Rice -->
+      <div class="dish-info">
+        <h2>Dish 1: Jollof Rice</h2>
+        <p>Jollof Rice is a flavorful one-pot dish made with rice, tomatoes, onions, and various spices. It's a staple in Ghanaian cuisine and a must-try for visitors.</p>
+        <!-- Images for Jollof Rice -->
+        <div class="dish-images">
+          <div class="dish-image">
+            <img src="../images/Unknown-5.jpeg" alt="Jollof Rice">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+          <div class="dish-image">
+            <img src="../images/Unknown-10.jpeg" alt="Jollof Rice">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="dish-info">
-      <h2>Dish 1: Jollof Rice</h2>
-      <p>Jollof Rice is a flavorful one-pot dish made with rice, tomatoes, onions, and various spices. It's a staple in Ghanaian cuisine and a must-try for visitors.</p>
-    </div>
+      <!-- Dish 2: Fufu with Light Soup -->
+      <div class="dish-info">
+        <h2>Dish 2: Fufu with Light Soup</h2>
+        <p>Fufu is a traditional Ghanaian dish made from cassava and plantains. It is often served with light soup, containing fish, meat, or vegetables. Fufu is enjoyed for its unique texture and taste.</p>
+        <!-- Images for Fufu with Light Soup -->
+        <div class="dish-images">
+          <div class="dish-image">
+            <img src="../images/Unknown-6.jpeg" alt="Fufu with Light Soup">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+          <div class="dish-image">
+            <img src="../images/Unknown-11.jpeg" alt="Fufu with Light Soup">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="dish-image">
-      <img src="../images/Unknown-5.jpeg" alt="Jollof Rice" class="food-image">
-    </div>
+      <!-- Dish 3: Waakye -->
+      <div class="dish-info">
+        <h2>Dish 3: Waakye</h2>
+        <p>Waakye is a flavorful dish made with rice and sorghum leaves, giving it a distinct reddish-brown color. It is often served with a variety of sides like fish, eggs, and vegetables.</p>
+        <!-- Images for Waakye -->
+        <div class="dish-images">
+          <div class="dish-image">
+            <img src="../images/Unknown-7.jpeg" alt="Waakye">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+          <div class="dish-image">
+            <img src="../images/Unknown-12.jpeg" alt="Waakye">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="dish-info">
-      <h2>Dish 2: Fufu with Light Soup</h2>
-      <p>Fufu is a traditional Ghanaian dish made from cassava and plantains. It is often served with light soup, containing fish, meat, or vegetables. Fufu is enjoyed for its unique texture and taste.</p>
-    </div>
+      <!-- Dish 4: Banku -->
+      <div class="dish-info">
+        <h2>Dish 4: Banku</h2>
+        <p>Banku is a traditional Ghanaian dish made from fermented corn and cassava dough. It has a unique texture and is often enjoyed with soups, stews, or grilled fish. The dish is a staple in Ghanaian cuisine, offering a delightful blend of flavors and a satisfying culinary experience.</p>
+        <!-- Images for Banku -->
+        <div class="dish-images">
+          <div class="dish-image">
+            <img src="../images/banku.jpeg" alt="Jam Bread">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+          <div class="dish-image">
+            <img src="../images/Unknown-13.jpeg" alt="Jam Bread">
+            <div class="image-overlay">
+              <p class="overlay-text">Click to Zoom</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="dish-image">
-      <img src="../images/Unknown-6.jpeg" alt="Fufu with Light Soup" class="food-image">
-    </div>
-
-    <div class="dish-info">
-      <h2>Dish 3: Waakye</h2>
-      <p>Waakye is a flavorful dish made with rice and sorghum leaves, giving it a distinct reddish-brown color. It is often served with a variety of sides like fish, eggs, and vegetables.</p>
-    </div>
-
-    <div class="dish-image">
-      <img src="../images/Unknown-7.jpeg" alt="Waakye" class="food-image">
-    </div>
-
-    <div class="dish-info">
-      <h2>Dish 4: Jam Bread</h2>
-      <p>Jam Bread is a popular snack in Ghana, enjoyed for breakfast or as a quick bite. It features soft bread spread with delicious local jams, adding a sweet touch to the culinary experience.</p>
-    </div>
-
-    <div class="dish-image">
-      <img src="../images/banku.jpeg" alt="Jam Bread" class="food-image">
     </div>
   </main>
 
   <footer>
     <div class="footer-content">
-      <p>A Taste of Ghana</p>
+      <p>A Taste Of Ghana</p>
+    </div>
+    <div class="footer-content-right">
+      <p>&copy; 2023</p>
     </div>
     <hr>
-    <p>&copy; 2023</p>
   </footer>
 
 </body>
-</html>
 
+</html>
