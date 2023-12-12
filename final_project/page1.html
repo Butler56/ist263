@@ -15,6 +15,7 @@
       padding: 0;
       background-color: #f4f4f4;
       font-size: 16px;
+      position: relative;
     }
 
     header, nav, main, footer {
@@ -110,6 +111,22 @@
       flex-grow: 1;
     }
 
+    .skip-to-content {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      background-color: #006b3f;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      z-index: 9999;
+      transform: translateX(-50%);
+    }
+
+    .skip-to-content:focus {
+      top: 0;
+    }
+
     @media only screen and (max-width: 600px) {
       body {
         font-size: 14px;
@@ -178,6 +195,9 @@
 
 <body>
 
+  <!-- Skip to content link -->
+  <a href="#main-content" class="skip-to-content">Skip to Content</a>
+
   <header>
     <h1>GhanaGateway: A Journey into the Heart of West Africa</h1>
   </header>
@@ -188,9 +208,9 @@
     <a href="../final_project/page3.html">Style of Dressing</a>
   </nav>
 
-  <main>
+  <main id="main-content">
     <div class="flag-container">
-      <img src="../images/Profile-Page.png" alt="Ghana Flag" class="flag">
+      <img src="../images/Profile-Page.png" alt="Ghana Flag with Author smiling" class="flag">
     </div>
 
     <div class="heading">Explore the rich history and culture of Ghana through these fascinating insights.</div>
@@ -199,7 +219,7 @@
       <div class="fun-fact">
         <h2>Fact 1</h2>
         <p>Ghana, situated on the Gulf of Guinea, boasts diverse landscapes and shares borders with Cote d'Ivoire, Burkina Faso, and Togo. The country's topography ranges from coastal plains to savannahs and forests.</p>
-        <img src="../images/African-map-showing-Ghana-Rwanda-the-two-African-countries-currently-using-drones.ppm.png" alt="Ghana on The Map" class="fact-image">
+        <img src="../images/African-map-showing-Ghana-Rwanda-the-two-African-countries-currently-using-drones.ppm.png" alt="Ghana on The Map of the african continent" class="fact-image">
       </div>
 
       <div class="fun-fact">
@@ -230,7 +250,7 @@
       <div class="fun-fact">
         <h2>Fact 6</h2>
         <p>The traditional Kente cloth, characterized by vibrant colors and intricate patterns, is a symbol of cultural identity. Woven by the Ashanti people, Kente is worn on special occasions and holds deep cultural significance.</p>
-        <img src="../images/Unknown-3.jpeg" alt="Fact 6 Image" class="fact-image">
+        <img src="../images/Unknown-3.jpeg" alt="Piece of Kente cloth" class="fact-image">
       </div>
     </div>
   </main>
