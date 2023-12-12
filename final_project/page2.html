@@ -66,21 +66,17 @@
 
     .dish-images {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .dish-image {
-      width: 48%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
     }
 
     .dish-image img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
       border-radius: 8px;
     }
 
@@ -251,4 +247,5 @@
 </body>
 
 </html>
+
 
